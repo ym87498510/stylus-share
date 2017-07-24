@@ -7,7 +7,13 @@
         <!--变量-->
         <!--<variables></variables>-->
         <!--插值-->
-        <interpolation></interpolation>
+        <!--<interpolation></interpolation>-->
+        <!--混写-->
+        <!--<mixins></mixins>-->
+        <!--函数-->
+        <!--<functions></functions>-->
+        <!--继承-->
+        <extend></extend>
     </div>
 </template>
 
@@ -16,13 +22,19 @@
     import selectors from './components/selectors'
     import variables from './components/variables'
     import interpolation from './components/interpolation'
+    import mixins from './components/mixins'
+    import functions from './components/functions'
+    import extend from './components/extend'
     export default {
         name: 'app',
         components: {
             helloStylus,
             selectors,
             variables,
-            interpolation
+            interpolation,
+            mixins,
+            functions,
+            extend
         }
     }
 </script>
@@ -33,6 +45,7 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
+
     img {
         display block
         width 5rem
